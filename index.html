@@ -1,59 +1,566 @@
----
-layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
----
-
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
-
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-
-    <div class="post-entry">
-      {{ post.excerpt | strip_html | xml_escape | truncatewords: 50 }}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags: 
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
-
-   </article>
-  {% endfor %}
+<!DOCTYPE html>
+<html class="gr__registry_jsonresume_org"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Chad Morland</title>
+<link rel="stylesheet" href="index_files/font-awesome.css">
+<style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}body,html{font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:13px;color:#40484f;font-weight:400;letter-spacing:0;line-height:1.46153846;text-align:left;webkit-text-size-adjust:100%;}p{display:block;margin-bottom:1.3em;}a{color:#0095ff;text-decoration:none;}a:hover{color:#0c65a5;text-decoration:underline;}ul{margin-top:1rem;}li{list-style-type:square;list-style-position:outside;margin-left:1.3em;}h1{font-size:2rem;}h2{font-size:1.67rem;}h3{font-size:1.27rem;}em{color:#757575;}blockquote{margin-bottom:1em;}strong{font-weight:700;}#resume{padding:1rem;margin-top:2rem;}.section{margin-bottom:1rem;}section .location{margin-right:.5em;color:#606d76;font-weight:700;}#contact{margin-top:.5rem;}#profiles .item{padding:0;}#header>#profiles,#header>#contact,#skills,#languages,#interests{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-flow:row wrap;flex-flow:row wrap;-webkit-justify-content:flex-start;justify-content:flex-start;}#header>div{line-height:1.5;}#header>div>div{margin-right:1.2em;}#header h1.name{font-size:2.8rem;font-weight:100;line-height:100%;}#header h2.label{color:#202931;font-size:1.47rem;font-weight:300;}#header .picture{width:11em;float:right;border-radius:4px;}.main-summary{background:#f1f8ff;padding:1.2em 1em;margin-top:1rem;}.main-summary p{margin:.15em 0 0;}h2.section-title{display:inline-block;background:#fff;padding:0 1em 0.3em 0;color:#ff6d1f;text-transform:uppercase;font-weight:600;border:none;font-size:.9rem;}.section>header{position:relative;}.fa{margin-right:0.25em;}.section>header::after{position:absolute;left:0;top:.7em;height:1px;background:#ccc;content:"";width:100%;z-index:-100;display:block;}.section.main-summary>section{margin:0;}.section>section>header{font-size:1.38rem;position:relative;margin-top:.7em;}.section>section>header:first-of-type{margin:0;}.section>section>header .space-left{position:absolute;left:-1.56rem;top:5px;color:#aaa;line-height:1;opacity:0;}.position,.company,.organization,.institution,.date,.area,.studyType,.title,.awarder{display:inline-block;}.position,.studyType,.area,.title,.language,.name{font-weight:600;}.company::before,.institution::before,.organization::before,.awarder::before{content:"at "}.company,.institution,.organization,.awarder{color:#606d76;font-weight:400;}.section header .date{font-size:1rem;display:block;padding:.1em 0;font-weight:600;}ul.keywords,ul.courses{margin-top:.5em;}ul.keywords li,ul.courses li{display:inline-block;margin:2px 2px 2px 0;padding:4px 5px 5px;font-size:.9rem;line-height:1;text-transform:lowercase;color:#3e6d8e;background-color:#dfeaf1;border:0 solid #dfeaf1;white-space:nowrap;}ul.keywords li:hover,ul.courses li:hover{background:#dfeaf0;}.item{padding:.5em 0;}.gpa{padding-bottom:.5em;}.fa.social{font-size:1.1em;}.google-plus{color:#dd4b39;}.tumblr{color:#32506d;}.foursquare{color:#0072b1;}.facebook{color:#3b5998;}.linkedin{color:#007bb6;}.pinterest{color:#cb2027;}.dribbble{color:#ea4c89;}.instagram{color:#517fa4;}.twitter{color:#00aced;}.soundcloud{color:#ff3a00;}.wordpress{color:#21759b;}.youtube{color:#bb0000;}.github{color:#171515;}.stack-overflow{color:#828386;position:relative;}.flickr{color:#ff0084;}.stack-overflow::after{position:absolute;left:0;content:'\f16c';color:#f68a1f;overflow:hidden;height:40%;}#languages .item,#skills .item,#interests .item{width:15em;padding:0 .5em .5em 0;border-bottom:none;}#skills .item{width:16em;}#skills .item .keywords{width:15em;}.level{margin-bottom:.5em;}.level .bar{border:1px solid #ddd;display:block;width:10em;height:5px;position:relative;}.level .bar::after{position:absolute;content:" ";top:0;left:0;background:black;height:5px;}.level.beginner .bar::after{background:#EB5F51;width:2.5em;}.level.intermediate .bar::after{background:#ffdf1f;width:5em;}.level.advanced .bar::after,.level.fluent .bar::after{background:#5CB85C;width:7.5em;}.level.master .bar::after,.level.native.speaker .bar::after{background:#59C596;width:10em;}#references .item{padding-left:.5em;border-left:5px solid #ff6d1f;}.clear::after{content:"";display:table;clear:both;}.display{display:block;opacity:1!important;}.margin1{margin-bottom:.5rem;}@media screen and (min-width: 602px) {#resume{width:80%;margin:0 auto;}}@media screen and (min-width: 1025px) {li{margin-left:1.5em;}#resume{width:820px;margin:2rem auto;opacity:0;-webkit-transition:opacity .5s ease-in-out;transition:opacity .5s ease-in-out;}.section>section>header .space-left{opacity:1;cursor:pointer;}.section>section{margin-left:1.67rem;}.company::before,.institution::before,.organization::before,.awarder::before{content:"| ";}.header-left{float:left;width:70%;word-break:normal;}.section header .date{float:right;padding:.2em;}.display{display:none;}.display:not(.none){display:block;}}@media print {#resume{margin:0;padding:0;-ms-word-wrap:break-word;word-wrap:break-word;line-height:1.3;}@page{margin:1cm 1.4cm;}.item-count{display:none;}.company::before,.institution::before,.organization::before,.awarder::before{content:"at ";}.main-summary{padding:2rem 0;}.section{margin:.8rem 0;padding:0;}.section header{padding-bottom:.15rem;}.section .location{padding-bottom:.15rem;}.stack-overflow::after{content:"";}.fa.social{color:#828386;}ul{margin-top:.4em;}ul,li{padding:0;}ul.keywords li,ul.courses li{margin:0;padding:0;font-size:.8rem;text-transform:lowercase;}ul.keywords li::after,ul.courses li::after{padding:0 0 0 .1rem;content:" |";}ul.keywords::before,ul.courses::before{font-size:.8rem;font-weight:600;}ul.keywords::before{content:"Skills acquired: ";}#skills .keywords::before{content:'';}.section p{margin:0;padding:0;}ul.courses::before{content:"Major courses: ";}ul.keywords li:last-of-type::after,ul.courses li:last-of-type::after{content:"";}.level em{font-style:normal;padding:.1em 0;}.level .bar{display:none;}#profiles .item{padding:0;}.item.display{display:block;opacity:1!important;}}</style>
+<style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style></head>
+<body data-gr-c-s-loaded="true">
+<div style="opacity: 1;" id="resume">
+<header id="header" class="clear">
+<div>
+<h1 class="name">Chad Morland</h1>
+<h2 class="label">Infrastructure Engineer / Devops Engineer / Manager</h2>
 </div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
+<span class="location">
+<span class="address">
+1304 Holton Heights Drive,
+</span>
+<span class="postalCode">
+L6H 2G2,
+</span>
+<span class="city">
+Oakville,
+</span>
+<span class="region">
+Ontario
+</span>
+<span class="countryCode">
+CA
+</span>
+</span>
+<div id="contact">
+<div class="website">
+<span class="fa fa-external-link"></span>
+<a target="_blank" href="https://morland.io/">https://morland.io</a>
+</div>
+<div class="email">
+<span class="fa fa-envelope-o"></span>
+<a href="mailto:chad@morland.io">chad@morland.io</a>
+</div>
+<div class="phone">
+<span class="fa fa-mobile"></span>
+(437) 887-3884
+</div>
+</div>
+<div id="profiles">
+<div class="item">
+<div class="username">
+<span class="fa fa-github github social"></span>
+<span class="url">
+<a href="http://github.com/cmorland">cmorland</a>
+</span>
+</div>
+</div>
+<div class="item">
+<div class="username">
+<span class="fa fa-linkedin linkedin social"></span>
+<span class="url">
+<a href="https://www.linkedin.com/in/cmorland">cmorland</a>
+</span>
+</div>
+</div>
+</div>
+</header>
+<section class="section main-summary">
+<section>
+<div><p>More than fifteen years of experience successfully recognizing 
+IT problems, constructing large-scale web hosting environments, and 
+developing solutions that have improved the efficiency of IT operations.
+ I have a proven record of success in reducing downtime, improving 
+security, saving costs, and elevating customer satisfaction. Background 
+includes business-to-business, business-to-consumer, and e-commerce 
+activities as well. Very entrepreneurial, I've started and run multiple 
+successful companies.</p></div>
+</section>
+</section>
+<section class="section margin1">
+<header>
+<h2 class="section-title">Skills</h2>
+</header>
+<section id="skills">
+<div class="item">
+<h3 class="name">
+Operating Systems
+</h3>
+<div class="level master">
+<em>Master</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>CentOS / RHEL</li>
+<li>Ubuntu / Debian</li>
+<li>Solaris</li>
+<li>FreeBSD</li>
+<li>Windows</li>
 </ul>
-{% endif %}
+</div>
+<div class="item">
+<h3 class="name">
+Programming
+</h3>
+<div class="level advanced">
+<em>Advanced</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>PHP</li>
+<li>Python</li>
+<li>Bash / Shell</li>
+<li>Perl</li>
+<li>Go</li>
+<li>Lua</li>
+<li>Git</li>
+<li>SVN</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Cloud Platforms
+</h3>
+<div class="level advanced">
+<em>Advanced</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>AWS</li>
+<li>Digital Ocean</li>
+<li>Linode</li>
+<li>Mesos</li>
+<li>OpenStack</li>
+<li>Docker</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Server Software
+</h3>
+<div class="level master">
+<em>Master</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>NGiNX</li>
+<li>Apache </li>
+<li>HAproxy</li>
+<li>php-fpm</li>
+<li>Ansible</li>
+<li>Kafka</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Databases
+</h3>
+<div class="level advanced">
+<em>Advanced</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>MySQL</li>
+<li>Cassandra</li>
+<li>Redis</li>
+<li>ElasticSearch</li>
+<li>MongoDB</li>
+<li>Galera</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Monitoring
+</h3>
+<div class="level master">
+<em>Master</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>Nagios</li>
+<li>Sensu</li>
+<li>monit</li>
+<li>CloudWatch</li>
+<li>New Relic</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class="section-title">Work Experience <span class="item-count">(7)</span></h2>
+</header>
+<section id="work">
+<header>
+<span class="space-left">
+<span class="fa fa-caret-down"></span>
+</span>
+<div class="position">
+Director of IT Operations
+</div>
+<div class="company">
+YTZ International Inc.
+</div>
+<div class="date">
+<span class="startDate">
+October 2009
+</span>
+<span class="endDate">
+- Current
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://ytz.com/">http://ytz.com</a>
+</span>
+<div class="item display" style="opacity:1">
+<div class="summary">
+<p></p><p>In this challenging role, I am responsible for the execution 
+and support of the agreed upon plans associated with YTZ’s total IT 
+infrastructure. Heading up development of operational and business plans
+ associated with our global, rapidly evolving, high growth multi-tenant 
+cloud environment supporting varied platforms and products.</p><p></p>
+</div>
+<ul class="highlights">
+<li>Scaled the IT infrastructure from one high-availability LAMP cluster
+ in a single data center to a global footprint of 10 datacenters and 
+cloud environments across North America, Europe, and Asia. Technologies 
+used include multiple AWS products (EC2, S3, IAM, CloudFormation, VPC, 
+SQS &amp; SNS), Openstack, Mesos, and Docker.</li>
+<li>Lead the technical design for an upgrade to DomainManager.com in 
+order to support the DNS hosting, parking and analytics for over 2 
+million domain names. Technologies used include PowerDNS, NGiNX, MongoDB
+ &amp; MySQL.</li>
+<li>Engineered the data pipeline and analytics platform using 
+technologies such as Logstash, Elasticseach, Kibana, Apache Kafka, 
+Cassandra, and Spark. This platform is scalable and currently supports 
+near real-time analytic reports for over 75 million unique requests per 
+day.</li>
+<li>Designed and built multiple monitoring systems using Nagios and 
+Sensu as well as custom application monitors. Currently monitoring 3600 
+services over 500 separate devices. Provide on-call support as needed.</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+Technical Project Manager
+</div>
+<div class="company">
+Novator Systems Ltd.
+</div>
+<div class="date">
+<span class="startDate">
+November 2008
+</span>
+<span class="endDate">
+- October 2009
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://novator.com/">http://novator.com</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p></p><p>With this role, I was responsible for the planning and 
+management of technical projects to support multiple major e-commerce 
+sites like FTD.com and Brookstone.com. Working closely with multiple 
+product teams and the technology group to help flush out the technical 
+requirements and details that were required for new product launches and
+ feature upgrades.</p><p></p>
+</div>
+<ul class="highlights">
+<li>Worked closely with Novator’s customer product and technology teams 
+providing guidance on all Payment Card Industry Data Security Standard 
+(PCI DSS) requirements along with assisting in the completion of 
+security objectives.</li>
+<li>Managed the delivery and setup of new IT assets and data center 
+upgrades. This involved translating requirements from product groups, 
+managing multiple vendor relationships and organizing the technical 
+team's time and tasks related to the installation and configuration of 
+said assets.</li>
+<li>Organized regular tech demos with internal and external 
+stakeholders. Frequently initiated 'Chaos Monkey' events in order to 
+ensure technologies and policies aligned to incident management and 
+disaster recovery goals.</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+IT Operations Manager
+</div>
+<div class="company">
+Azoogle.com - Epic Advertising Inc.
+</div>
+<div class="date">
+<span class="startDate">
+April 2006
+</span>
+<span class="endDate">
+- October 2008
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://azoogle.com/">http://azoogle.com</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p></p><p>In this fast paced position I was responsible for the team 
+that managed the global IT infrastructure and operation. 
+Responsibilities included managing a team of ten people spread across 
+North America, infrastructure design and implementation, budgeting, 
+capacity planning and project management.</p><p></p>
+</div>
+<ul class="highlights">
+<li>Rapidly scaled two independent production data centers to meet the 
+needs of the business objectives. Specific projects included the 
+implementation of local and global load balancing, network improvements 
+and design of additional high capacity web server farms. </li>
+<li>Oversaw company expansion efforts by designing, planning and 
+implementing the IT environment for three office locations in San 
+Francisco, New York, and Markham.</li>
+<li>Expanded the IT Operations team from two people to ten by selecting 
+candidates and performing interviews in the US and Canada. Continued to 
+manage the team by conducting regular status meetings and ensured that 
+assigned project tasks were in line with each employee's career 
+interests and the goals of the company.</li>
+<li>Well respected within the company for my knowledge set, ability to 
+complete tasks and manage resources. I was frequently involved in 
+product development strategy, troubleshooting and brainstorming sessions
+ at all levels of the company.</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+System Administrator
+</div>
+<div class="company">
+Date.com - Turbopromote Inc.
+</div>
+<div class="date">
+<span class="startDate">
+September 2004
+</span>
+<span class="endDate">
+- February 2006
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://date.com/">http://date.com</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p></p><p>This position was responsible for the planning, installation, 
+and maintenance of systems hosting a high traffic 24/7 e-commerce web 
+portal. Responsibilities included customer facing technologies as well 
+as the back end and office systems running in a heterogeneous 
+environment of Windows, Linux, Solaris and FreeBSD platforms.</p><p></p>
+</div>
+<ul class="highlights">
+<li>Maintained and deployed applications to production, staging and 
+development areas on JBoss J2EE servers and Jetty servlet containers</li>
+<li>Responsible for planning and implementation of several projects to 
+improve the infrastructure and elevate the customer experience. Such 
+projects included front end caching servers to improve static content 
+delivery, high-speed mail systems to enhance the reliability of 
+newsletter deliveries and remote management solutions to reduce admin 
+costs.</li>
+<li>Performed regular datacenter maintenance tasks including hardware repairs, cabling, provisioning new systems and inventory.</li>
+<li>Acted in the role of primary support contact for a wide range of 
+essential services and tools including production, development, and 
+workstation assets. Duties included carrying a cell phone and 24/7 
+emergency pager.</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+System Administrator
+</div>
+<div class="company">
+WebHosting.com - Inquent Technologies Inc.
+</div>
+<div class="date">
+<span class="startDate">
+December 1999
+</span>
+<span class="endDate">
+- September 2004
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://webhosting.com/">http://webhosting.com</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p></p><p>Installed, planned, and administered server technologies 
+including PeopleSoft CRM, Oracle 8i, iPlanet, and various open source 
+software packages running on a mixed network of FreeBSD, Solaris, and 
+Linux machines.</p><p></p>
+</div>
+<ul class="highlights">
+<li>Designed, built, and rolled out high-capacity, clustered hosting environment that achieved a minimum of 99.9% uptime.</li>
+<li>Operated effectively with product marketing and research groups to 
+provide practical interface design solutions for extensive backend 
+technologies. Solutions included website management, web-based email, 
+database support, and e-commerce.</li>
+<li>Developed a web-based support application using Perl resulting in an 80% reduction in ticket escalations.</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+Owner
+</div>
+<div class="company">
+MinecraftLayer.com
+</div>
+<div class="date">
+<span class="startDate">
+September 2012
+</span>
+<span class="endDate">
+- September 2014
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://minecraftlayer.com/">http://minecraftlayer.com</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p></p><p>Started my own Minecraft hosting company with over 700 monthly
+ paying customers and revenues over $100k per year. MinecraftLayer 
+offered server hosting in multiple datacenters across North America and 
+Europe. </p><p></p>
+</div>
+<ul class="highlights">
+<li>Managed relationships with multiple vendors and service providers. </li>
+<li>Hired and managed 3 remote customer service agents. </li>
+<li>Created custom scripts to aid with provisioning, monitoring, and management of critical services.</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+Owner
+</div>
+<div class="company">
+ServerHosters.com
+</div>
+<div class="date">
+<span class="startDate">
+September 2011
+</span>
+<span class="endDate">
+- January 2014
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://serverhosters.com/">http://serverhosters.com</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p></p><p>Started my own web hosting company with over 2000 monthly paying customers and revenues over $120k per year. </p><p></p>
+</div>
+<ul class="highlights">
+<li>Aquired multiple companies to help with growth and expansion into new market verticals.</li>
+<li>Single handed managed all aspects of the business from vendor relations to customer support to new product development.</li>
+<li>Leased data center space in multiple facilities across Toronto and 
+installed and maintained equipment in each location. Over $80k spent on 
+hardware and network infrastructure. </li>
+</ul>
+</div>
+</section>
+</section>
+<section class="section margin1">
+<header>
+<h2 class="section-title">Languages</h2>
+</header>
+<section id="languages">
+<div class="display">
+<h3 class="language">
+English
+</h3>
+<div class="item">
+<div class="level fluency native speaker">
+<em>Native Speaker</em>
+<div class="bar"></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</div>
+<script>
+			(function(){
+				var elements = document.querySelector("#resume");
+
+				// adding the element to the all container
+				// and using event delegation
+				elements.addEventListener("click", function(e) {
+					var current = e.target;
+					// font awesone arrows
+					var arrowRight = current.classList.contains('fa-caret-right');
+					var arrowDown = current.classList.contains('fa-caret-down');
+
+					if(current && current.nodeName == "SPAN" && (arrowRight || arrowDown)) {
+						var header = e.target.parentNode.parentNode;
+						var item = header.nextSibling;
+
+						// select the .item element from the siblings
+						while (!item || !item.classList || !item.classList.contains('item')) {
+							item = item.nextSibling;
+						}
+
+						// hide or show the .item element
+						item.classList.toggle('none');
+
+						// if the .item is going to be shown then imcrease is opacity
+						// every 20 milliseconds to make a fadeIn effect
+						if (!item.classList.contains('none')) {
+							var id = setInterval(function() {
+								item.style.opacity = parseFloat(item.style.opacity) + 0.09;
+								if (parseFloat(item.style.opacity) >= 1) {
+									clearInterval(id);
+								}
+							}, 20);
+						} else {
+							item.style.opacity = 0;
+						}
+
+						current.classList.toggle('fa-caret-right');
+						current.classList.toggle('fa-caret-down');
+					}
+
+				}, false);
+
+				// Make the #resume visible only when the DOM is fully loaded
+				elements.style.opacity = '1';
+			})();
+		</script>
+<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script>
+
+</body></html>

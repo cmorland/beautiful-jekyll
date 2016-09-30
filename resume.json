@@ -1,0 +1,211 @@
+{
+  "basics": {
+    "name": "Chad Morland",
+    "label": "Infrastructure Engineer / Devops Engineer / Manager",
+    "picture": "",
+    "email": "chad@morland.io",
+    "phone": "(437) 887-3884",
+    "website": "https://morland.io",
+    "summary": "More than fifteen years of experience successfully recognizing IT problems, constructing large-scale web hosting environments, and developing solutions that have improved the efficiency of IT operations. I have a proven record of success in reducing downtime, improving security, saving costs, and elevating customer satisfaction. Background includes business-to-business, business-to-consumer, and e-commerce activities as well. Very entrepreneurial, I've started and run multiple successful companies.",
+    "location": {
+      "address": "1304 Holton Heights Drive",
+      "postalCode": "L6H 2G2",
+      "city": "Oakville",
+      "countryCode": "CA",
+      "region": "Ontario"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "cmorland",
+        "url": "http://github.com/cmorland"
+      },
+      {
+        "network": "LinkedIN",
+        "username": "cmorland",
+        "url": "https://www.linkedin.com/in/cmorland"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "YTZ International Inc.",
+      "position": "Director of IT Operations",
+      "website": "http://ytz.com",
+      "startDate": "2009-10-01",
+      "summary": "In this challenging role, I am responsible for the execution and support of the agreed upon plans associated with YTZ’s total IT infrastructure. Heading up development of operational and business plans associated with our global, rapidly evolving, high growth multi-tenant cloud environment supporting varied platforms and products.",
+      "highlights": [
+	"Scaled the IT infrastructure from one high-availability LAMP cluster in a single data center to a global footprint of 10 datacenters and cloud environments across North America, Europe, and Asia. Technologies used include multiple AWS products (EC2, S3, IAM, CloudFormation, VPC, SQS & SNS), Openstack, Mesos, and Docker.",
+	"Lead the technical design for an upgrade to DomainManager.com in order to support the DNS hosting, parking and analytics for over 2 million domain names. Technologies used include PowerDNS, NGiNX, MongoDB & MySQL.",
+	"Engineered the data pipeline and analytics platform using technologies such as Logstash, Elasticseach, Kibana, Apache Kafka, Cassandra, and Spark. This platform is scalable and currently supports near real-time analytic reports for over 75 million unique requests per day.",
+	"Designed and built multiple monitoring systems using Nagios and Sensu as well as custom application monitors. Currently monitoring 3600 services over 500 separate devices. Provide on-call support as needed."
+      ]
+    },
+    {
+      "company": "Novator Systems Ltd.",
+      "position": "Technical Project Manager",
+      "website": "http://novator.com",
+      "startDate": "2008-11-01",
+      "endDate": "2009-10-01",
+      "summary": "With this role, I was responsible for the planning and management of technical projects to support multiple major e-commerce sites like FTD.com and Brookstone.com. Working closely with multiple product teams and the technology group to help flush out the technical requirements and details that were required for new product launches and feature upgrades.",
+      "highlights": [
+	"Worked closely with Novator’s customer product and technology teams providing guidance on all Payment Card Industry Data Security Standard (PCI DSS) requirements along with assisting in the completion of security objectives.",
+	"Managed the delivery and setup of new IT assets and data center upgrades. This involved translating requirements from product groups, managing multiple vendor relationships and organizing the technical team's time and tasks related to the installation and configuration of said assets.",
+	"Organized regular tech demos with internal and external stakeholders. Frequently initiated 'Chaos Monkey' events in order to ensure technologies and policies aligned to incident management and disaster recovery goals."
+      ]
+    },
+    {
+      "company": "Azoogle.com - Epic Advertising Inc.",
+      "position": "IT Operations Manager",
+      "website": "http://azoogle.com",
+      "startDate": "2006-04-01",
+      "endDate": "2008-10-01",
+      "summary": "In this fast paced position I was responsible for the team that managed the global IT infrastructure and operation. Responsibilities included managing a team of ten people spread across North America, infrastructure design and implementation, budgeting, capacity planning and project management.",
+      "highlights": [
+        "Rapidly scaled two independent production data centers to meet the needs of the business objectives. Specific projects included the implementation of local and global load balancing, network improvements and design of additional high capacity web server farms. ",
+        "Oversaw company expansion efforts by designing, planning and implementing the IT environment for three office locations in San Francisco, New York, and Markham.",
+        "Expanded the IT Operations team from two people to ten by selecting candidates and performing interviews in the US and Canada. Continued to manage the team by conducting regular status meetings and ensured that assigned project tasks were in line with each employee's career interests and the goals of the company.",
+        "Well respected within the company for my knowledge set, ability to complete tasks and manage resources. I was frequently involved in product development strategy, troubleshooting and brainstorming sessions at all levels of the company."
+      ]
+    },
+    {
+      "company": "Date.com - Turbopromote Inc.",
+      "position": "System Administrator",
+      "website": "http://date.com",
+      "startDate": "2004-09-01",
+      "endDate": "2006-02-01",
+      "summary": "This position was responsible for the planning, installation, and maintenance of systems hosting a high traffic 24/7 e-commerce web portal. Responsibilities included customer facing technologies as well as the back end and office systems running in a heterogeneous environment of Windows, Linux, Solaris and FreeBSD platforms.",
+      "highlights": [
+	"Maintained and deployed applications to production, staging and development areas on JBoss J2EE servers and Jetty servlet containers",
+	"Responsible for planning and implementation of several projects to improve the infrastructure and elevate the customer experience. Such projects included front end caching servers to improve static content delivery, high-speed mail systems to enhance the reliability of newsletter deliveries and remote management solutions to reduce admin costs.",
+	"Performed regular datacenter maintenance tasks including hardware repairs, cabling, provisioning new systems and inventory.",
+	"Acted in the role of primary support contact for a wide range of essential services and tools including production, development, and workstation assets. Duties included carrying a cell phone and 24/7 emergency pager."
+      ]
+    },
+    {
+      "company": "WebHosting.com - Inquent Technologies Inc.",
+      "position": "System Administrator",
+      "website": "http://webhosting.com",
+      "startDate": "1999-12-01",
+      "endDate": "2004-09-01",
+      "summary": "Installed, planned, and administered server technologies including PeopleSoft CRM, Oracle 8i, iPlanet, and various open source software packages running on a mixed network of FreeBSD, Solaris, and Linux machines.",
+      "highlights": [
+        "Designed, built, and rolled out high-capacity, clustered hosting environment that achieved a minimum of 99.9% uptime.",
+        "Operated effectively with product marketing and research groups to provide practical interface design solutions for extensive backend technologies. Solutions included website management, web-based email, database support, and e-commerce.",
+        "Developed a web-based support application using Perl resulting in an 80% reduction in ticket escalations."
+      ]
+    },
+    {
+      "company": "MinecraftLayer.com",
+      "position": "Owner",
+      "website": "http://minecraftlayer.com",
+      "startDate": "2012-09-01",
+      "endDate": "2014-09-01",
+      "summary": "Started my own Minecraft hosting company with over 700 monthly paying customers and revenues over $100k per year. MinecraftLayer offered server hosting in multiple datacenters across North America and Europe.  ",
+      "highlights": [
+        "Managed relationships with multiple vendors and service providers.  ",
+        "Hired and managed 3 remote customer service agents. ",
+	"Created custom scripts to aid with provisioning, monitoring, and management of critical services."
+      ]
+    },
+    {
+      "company": "ServerHosters.com",
+      "position": "Owner",
+      "website": "http://serverhosters.com",
+      "startDate": "2011-09-01",
+      "endDate": "2014-01-01",
+      "summary": "Started my own web hosting company with over 2000 monthly paying customers and revenues over $120k per year. ",
+      "highlights": [
+        "Aquired multiple companies to help with growth and expansion into new market verticals.",
+        "Single handed managed all aspects of the business from vendor relations to customer support to new product development.",
+        "Leased data center space in multiple facilities across Toronto and installed and maintained equipment in each location. Over $80k spent on hardware and network infrastructure. "
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Operating Systems",
+      "level": "Master",
+      "keywords": [
+        "CentOS / RHEL",
+        "Ubuntu / Debian",
+        "Solaris",
+        "FreeBSD",
+        "Windows"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Advanced",
+      "keywords": [
+        "PHP",
+        "Python",
+        "Bash /  Shell",
+        "Perl",
+        "Go",
+        "Lua",
+        "Git",
+        "SVN"
+      ]
+    },
+    {
+      "name": "Cloud Platforms",
+      "level": "Advanced",
+      "keywords": [
+        "AWS",
+        "Digital Ocean",
+        "Linode",
+        "Mesos",
+        "OpenStack",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Server Software",
+      "level": "Master",
+      "keywords": [
+        "NGiNX",
+        "Apache ",
+        "HAproxy",
+        "php-fpm",
+        "Ansible",
+        "Kafka"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Advanced",
+      "keywords": [
+        "MySQL",
+        "Cassandra",
+        "Redis",
+        "ElasticSearch",
+        "MongoDB",
+        "Galera"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "level": "Master",
+      "keywords": [
+        "Nagios",
+        "Sensu",
+        "monit",
+        "CloudWatch",
+        "New Relic"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": []
+}
